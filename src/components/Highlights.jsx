@@ -5,15 +5,26 @@ import { ReactComponent as ConferenceSvg } from "../assets/svg/conference.svg";
 import { ReactComponent as ExhibitionSvg } from "../assets/svg/exhibition.svg";
 import { ReactComponent as AdvertSvg } from "../assets/svg/advert.svg";
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import Button from "../reusable-components/Button";
 import "./styles/Highlights.scss";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
 export default function Highlights() {
+  const container = useRef(null);
+  const contentRef = useRef(null);
+
   return (
-    <section className="highlights">
+    <section ref={container} className="highlights">
       <h2>Event Highlights & Opportunities</h2>
 
-      <aside className="highlights__list">
+      <aside ref={contentRef} className="highlights__list">
         <div className="highlight__item">
           <div className="highlight__content">
             <div>
@@ -47,7 +58,7 @@ export default function Highlights() {
             Contact Us <ArrowUp />
           </Button>
 
-          <ConferenceSvg className="conference" />
+          <ConferenceSvg className="svg conference" />
         </div>
 
         <div className="highlight__item">
@@ -80,7 +91,7 @@ export default function Highlights() {
             Contact Us <ArrowUp />
           </Button>
 
-          <ExhibitionSvg className="exhibition" />
+          <ExhibitionSvg className="svg exhibition" />
         </div>
 
         <div className="highlight__item">
@@ -132,7 +143,7 @@ export default function Highlights() {
             Contact Us <ArrowUp />
           </Button>
 
-          <AdvertSvg className="advert" />
+          <AdvertSvg className="svg advert" />
         </div>
       </aside>
     </section>

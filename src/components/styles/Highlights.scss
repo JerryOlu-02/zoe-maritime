@@ -23,6 +23,7 @@
 .highlights__list {
   @include mixins.flex-column;
   gap: 16px;
+  position: relative;
 }
 
 .highlight__item {
