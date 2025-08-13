@@ -1,0 +1,281 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include mixins.flex-space-between;
+  padding: 16.5px 80px;
+
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.sticky {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(221, 221, 221, 1);
+
+  .nav__links {
+    li {
+      color: rgba(0, 39, 84, 1);
+    }
+  }
+
+  .logo {
+    svg {
+      fill: rgba(0, 39, 84, 1);
+    }
+  }
+
+  .btn-nav {
+    background-color: rgba(0, 39, 84, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.nav__container {
+  @include mixins.flex-row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__links {
+  list-style-type: none;
+  @include mixins.flex-row;
+  gap: 32px;
+
+  li {
+    cursor: pointer;
+    font-size: 16px;
+    color: variables.$white;
+    transition: color 0.5s ease-in-out;
+    font-weight: 400;
+
+    &:hover {
+      color: variables.$white;
+    }
+  }
+}
+
+.btn__container {
+  @include mixins.flex-row;
+}
+
+.btn-nav {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+}
+
+.btn-nav.link {
+  color: rgba(51, 51, 51, 1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Emblema One", system-ui;
+  font-style: normal;
+  color: variables.$white;
+  width: 50%;
+  @include mixins.flex-center;
+  justify-content: flex-start;
+}
+
+.nav__hamburger {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  top: 27.5px;
+  z-index: 15;
+
+  span {
+    height: 2px;
+    width: 19px;
+    border-radius: 2px;
+    background-color: variables.$white;
+    transition: transform 0.3s ease-in-out;
+
+    &:last-of-type {
+      width: 9.5px;
+    }
+  }
+}
+
+.nav__hamburger.open {
+  span {
+    &:first-of-type {
+      transform: rotate(45deg);
+      position: relative;
+      top: 2px;
+    }
+
+    &:nth-of-type(2) {
+      transform: rotate(135deg);
+      position: relative;
+      top: -4px;
+    }
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+.arrow-div {
+  width: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .logo {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .logo {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    padding: 16px 40px;
+    height: 80px;
+  }
+
+  .navbar.sticky {
+    .nav__hamburger {
+      span {
+        background-color: rgba(0, 39, 84, 1);
+      }
+    }
+  }
+
+  .nav__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 100px 20px 40px;
+
+    z-index: 15;
+    pointer-events: none;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .nav__container.open {
+    pointer-events: all;
+
+    transform: scaleX(1);
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+  }
+
+  .logo {
+    position: fixed;
+    left: 40px;
+    top: 17.5px;
+    width: unset;
+    z-index: 20;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.5s ease-in-out;
+
+    li {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: -3%;
+      color: rgba(0, 39, 84, 1);
+    }
+  }
+
+  .nav__links.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .btn__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    opacity: 0;
+    pointer-events: all;
+
+    transition: opacity 0.5s ease-in-out;
+
+    .btn-nav {
+      background-color: rgba(0, 39, 84, 1);
+      color: rgba(255, 255, 255, 1);
+
+      .arrow-div {
+        background-color: variables.$white;
+        svg {
+          path {
+            stroke: rgba(0, 39, 84, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .btn__container.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .arrow-div {
+    width: 44px;
+  }
+
+  .nav__hamburger {
+    @include mixins.flex-column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .nav__hamburger.open {
+    span {
+      background-color: rgba(0, 39, 84, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    padding: 21px 20px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+}

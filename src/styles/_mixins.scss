@@ -1,0 +1,119 @@
+@use "./variables";
+
+@mixin background($color) {
+  background-color: $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin padding {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@mixin h1 {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -3%;
+
+  @media screen and (max-width: 650px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@mixin h3 {
+  font-size: var(--header-3);
+  line-height: var(--line-height-3);
+  letter-spacing: var(--letter-spacing-3);
+}
+
+@mixin media-breakpoint-h3 {
+  font-size: 40px;
+  line-height: 38px;
+}
+
+@mixin h4 {
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -3%;
+}
+
+@mixin media-breakpoint-h4 {
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -3%;
+}
+
+@mixin h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -3%;
+}
+
+@mixin p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -3%;
+}
+
+@mixin p1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -3%;
+}
+
+@mixin media-breakpoint-p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -2%;
+}
+
+@mixin p2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -3%;
+}
+
+@mixin outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin figtree {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

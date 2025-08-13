@@ -1,0 +1,29 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.btn {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 14px 24px;
+  border-radius: 600px;
+  color: rgba(0, 39, 84, 1);
+
+  font-size: 14px;
+  font-weight: 500;
+  border-width: 0;
+  width: fit-content;
+  @include mixins.flex-center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.arrow-div {
+  width: 44px;
+  height: 44px;
+  border-radius: 60px;
+  background-color: rgba(0, 39, 84, 1);
+  @include mixins.flex-center;
+}
+
+.btn.arrow {
+  padding: 4px 4px 4px 16px;
+}

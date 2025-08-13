@@ -1,0 +1,54 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.about {
+  width: 100%;
+  background-color: rgba(248, 249, 251, 1);
+  @include mixins.padding;
+  @include mixins.flex-column;
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.about__content {
+  width: 50%;
+
+  @media screen and (max-width: 1350px) {
+    width: 55%;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 1050px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 920px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+}
+
+.about__content p {
+  @include mixins.figtree;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -1%;
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 64px;
+  }
+
+  .about__content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

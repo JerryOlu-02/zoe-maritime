@@ -1,0 +1,101 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.footer {
+  // min-height: 100vh;
+  background-image: url("/src/assets/images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 288px 0;
+  width: 100%;
+
+  @include mixins.flex-center;
+  gap: 120px;
+}
+
+.footer__left {
+  @include mixins.flex-column;
+  align-items: flex-end;
+  gap: 44px;
+
+  h2 {
+    @include mixins.figtree;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -3%;
+    text-align: right;
+    text-transform: uppercase;
+    color: variables.$white;
+  }
+}
+
+.footer__buttons {
+  @include mixins.flex-row;
+  gap: 24px;
+
+  .btn:first-of-type {
+    background-color: rgba(6, 158, 220, 1);
+    color: variables.$white;
+  }
+
+  .arrow-div {
+    background-color: rgba(0, 104, 222, 1);
+  }
+}
+
+.footer__right {
+  @include mixins.flex-column;
+  gap: 14px;
+
+  p {
+    @include mixins.figtree;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    color: variables.$white;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 288px 20px;
+  }
+
+  .footer__left {
+    align-items: center;
+    gap: 24px;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .footer__buttons {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer__right {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 120px 20px;
+  }
+
+  .footer__left {
+    h2 {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+}
