@@ -1,5 +1,5 @@
 import Button, { ArrowUp } from "./Button";
-import "./styles/NavBar.scss";
+import "./styles/Navbar.scss";
 import { ReactComponent as LogoSvg } from "../assets/svg/logo.svg";
 import { ReactComponent as LogoDarkSvg } from "../assets/svg/logo-dark.svg";
 
