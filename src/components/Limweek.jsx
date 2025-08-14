@@ -1,5 +1,5 @@
 import "./styles/Limweek.scss";
-import LimweekImg from "../assets/images/limweek.png";
+import LimweekImg from "../assets/images/limweek.jpg";
 import Button, { ArrowUp } from "../reusable-components/Button";
 import { useEffect, useRef } from "react";
 import useSectionContext from "../helpers/useSectionContext";

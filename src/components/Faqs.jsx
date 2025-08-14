@@ -2,7 +2,7 @@ import "./styles/Faqs.scss";
 import { useState } from "react";
 import { FAQS as faqs } from "../helpers/details";
 import { ReactComponent as Plus } from "../assets/svg/Plus.svg";
-import FaqImage from "../assets/images/faq-image.png";
+import FaqImage from "../assets/images/faq-image.jpg";
 import { useRef, useEffect } from "react";
 import useSectionContext from "../helpers/useSectionContext";
 

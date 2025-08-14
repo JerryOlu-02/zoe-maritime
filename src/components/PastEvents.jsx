@@ -1,11 +1,11 @@
 import "swiper/css";
 import "./styles/PastEvents.scss";
-import PastImg0 from "../assets/images/past-img-0.png";
-import PastImg1 from "../assets/images/past-img-1.png";
-import PastImg2 from "../assets/images/past-img-2.png";
-import PastImg3 from "../assets/images/past-img-3.png";
-import PastImg4 from "../assets/images/past-img-4.png";
-import PastImg5 from "../assets/images/past-img-5.png";
+import PastImg0 from "../assets/images/past-img-0.jpg";
+import PastImg1 from "../assets/images/past-img-1.jpg";
+import PastImg2 from "../assets/images/past-img-2.jpg";
+import PastImg3 from "../assets/images/past-img-3.jpg";
+import PastImg4 from "../assets/images/past-img-4.jpg";
+import PastImg5 from "../assets/images/past-img-5.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";

@@ -1,16 +1,16 @@
-import CoreImage1 from "../assets/images/core-service-1.png";
-import CoreImage2 from "../assets/images/core-service-2.png";
-import CoreImage3 from "../assets/images/core-service-3.png";
-import CoreImage4 from "../assets/images/core-service-4.png";
-import CoreImage5 from "../assets/images/core-service-5.png";
+import CoreImage1 from "../assets/images/core-service-1.jpg";
+import CoreImage2 from "../assets/images/core-service-2.jpg";
+import CoreImage3 from "../assets/images/core-service-3.jpg";
+import CoreImage4 from "../assets/images/core-service-4.jpg";
+import CoreImage5 from "../assets/images/core-service-5.jpg";
 
 // These imports are used to display speaker images on the "Speakers" section/components on the website
-import Speaker1Img from "../assets/images/speaker-1.png";
-import Speaker2Img from "../assets/images/speaker-2.png";
-import Speaker3Img from "../assets/images/speaker-3.png";
-import Speaker4Img from "../assets/images/speaker-4.png";
-import Speaker5Img from "../assets/images/speaker-5.png";
-import Speaker6Img from "../assets/images/speaker-6.png";
+import Speaker1Img from "../assets/images/speaker-1.jpg";
+import Speaker2Img from "../assets/images/speaker-2.jpg";
+import Speaker3Img from "../assets/images/speaker-3.jpg";
+import Speaker4Img from "../assets/images/speaker-4.jpg";
+import Speaker5Img from "../assets/images/speaker-5.jpg";
+import Speaker6Img from "../assets/images/speaker-6.jpg";
 
 export const CORE_SERVICES = [
   {
