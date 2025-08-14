@@ -1,6 +1,8 @@
 import Button, { ArrowUp } from "./Button";
 import "./styles/NavBar.scss";
 import { ReactComponent as LogoSvg } from "../assets/svg/logo.svg";
+import { ReactComponent as LogoDarkSvg } from "../assets/svg/logo-dark.svg";
+
 import { useState, useEffect } from "react";
 import useSectionContext from "../helpers/useSectionContext.js";
 
@@ -43,9 +45,7 @@ export default function NavBar() {
 
   return (
     <nav className={`navbar ${stickyClass}`}>
-      <h3 className="logo">
-        <LogoSvg />
-      </h3>
+      <h3 className="logo">{isSticky ? <LogoDarkSvg /> : <LogoSvg />}</h3>
 
       <div className={`nav__container ${activeClass}`}>
         <ul className={`nav__links ${activeClass}`}>
