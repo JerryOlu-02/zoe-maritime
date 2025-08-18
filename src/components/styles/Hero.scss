@@ -41,6 +41,15 @@
   .btn {
     position: relative;
     padding: 4px 4px 4px 16px;
+
+    .arrow {
+      width: 44px;
+      height: 44px;
+    }
+
+    .arrow-div {
+      background-color: rgba(0, 39, 84, 1);
+    }
   }
 }
 

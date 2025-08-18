@@ -1,5 +1,5 @@
-import Button, { ArrowUp } from "../reusable-components/Button";
 import NavBar from "../reusable-components/Navbar";
+import Button, { ArrowUp } from "../reusable-components/Button";
 import "./styles/Hero.scss";
 
 export default function Hero() {
@@ -18,7 +18,13 @@ export default function Hero() {
           <p>Maximizing Africa’s Ocean Resources</p>
         </div>
 
-        <Button>
+        <Button
+          link
+          url={
+            "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+          }
+          className="arrow"
+        >
           Register For Event <ArrowUp />
         </Button>
 

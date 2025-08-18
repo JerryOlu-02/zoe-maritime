@@ -57,8 +57,14 @@ export default function NavBar() {
         </ul>
 
         <div className={`btn__container ${activeClass}`}>
-          <Button className={"btn-nav arrow"}>
-            Register For Event <ArrowUp />
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className={"btn-nav"}
+          >
+            Register For Event
           </Button>
         </div>
       </div>

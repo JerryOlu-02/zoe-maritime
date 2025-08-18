@@ -30,7 +30,13 @@ export default function Limweek() {
             practices.
           </p>
 
-          <Button className="arrow">
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
             Register For Event <ArrowUp />
           </Button>
         </div>

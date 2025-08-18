@@ -35,9 +35,14 @@
   @include mixins.flex-row;
   gap: 24px;
 
-  .btn:first-of-type {
+  .btn {
     background-color: rgba(6, 158, 220, 1);
     color: variables.$white;
+  }
+
+  .btn.arrow {
+    background-color: variables.$white;
+    color: rgba(0, 39, 84, 1);
   }
 
   .arrow-div {

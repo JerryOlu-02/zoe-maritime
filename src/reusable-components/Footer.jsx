@@ -18,15 +18,21 @@ export default function Footer() {
             Contact Us
           </Button>
 
-          <Button className="arrow">
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
             Register For Event <ArrowUp />
           </Button>
         </div>
       </aside>
 
       <aside className="footer__right">
-        <p>+2341234567890</p>
-        <p>Email address </p>
+        <p>+234 903 350 3240</p>
+        <p>zoemaritime@gmail.com</p>
         <p>Location address</p>
       </aside>
     </section>

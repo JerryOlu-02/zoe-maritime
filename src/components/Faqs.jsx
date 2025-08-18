@@ -28,8 +28,16 @@ export default function Faqs() {
       <div key={index} className="faq-container">
         <div className="faq-container__content">
           <h5>{faq.question}</h5>
-
-          <p className={`faq-answer ${isOpen && "open"}`}>{faq.answer}</p>
+          {faq.link ? (
+            <p className={`faq-answer ${isOpen && "open"}`}>
+              {faq.textBefore}{" "}
+              <a href={faq.url} target="_blank" rel="noreferrer">
+                here
+              </a>
+            </p>
+          ) : (
+            <p className={`faq-answer ${isOpen && "open"}`}>{faq.answer}</p>
+          )}
         </div>
 
         <div

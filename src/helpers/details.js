@@ -104,42 +104,44 @@ export const SPEAKERS = [
 export const FAQS = [
   {
     question: "When and where will LIMWEEK 2025 take place?",
-    answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    answer: "On September 29th - 30th. At the Lagos Orientals Hotel",
   },
   {
     question: "How do I register for the event?",
-    answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    answer: "",
+    link: true,
+    textBefore: "1.To Register as local delegates Click",
+    textAfter: "here",
+    url: "https://tix.africa/lagos-international-maritime-week-limweek-2025",
   },
   {
     question: "What does the conference fee cover?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "A. Opportunity to interact with Maritime stakeholders and other industry players \nB. Entitled to the Lagos International Maritime Week Conference Brochure, Programs and other Event Materials \nC. Certificate of Attendance \nD. Standard continental  refreshment",
   },
   {
     question: "How can I apply for a booth at the exhibition?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Cost: ₦450,000 per booth [includes; 2 chairs, 1 table, 1 socket and 2 spotlights] \nSize: 2 x 2 meters. \nTo apply for a booth, kindly contact the following: \nzoemaritime@gmail.com \n+234 903 350 3240",
   },
   {
     question: "What does ZOE Maritime Resources Ltd. do?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "1.We provide efficient services to our clients at the local, regional, and international levels. \n2.We serve the needs of our clients by giving advice and facilitating the processing of relevant compliance documentation for maritime Transactions through the use of digital technology. \n3.We develop human capacity through training workshops, seminars, master classes, conferences and Business to Business [B2B] meetings.",
   },
   {
     question: "Does the company offer training or capacity-building programs?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Yes. Providers of Training Rooms, Meeting Places, Centre Rental and Offices: \nWith our state of the art premises, we provide center rental and training facilities with adequate parking spaces for clients who are interested in holding their meetings in our premises.",
   },
   {
     question: "Does the company work with international stakeholders?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Yes. Facilitating the Acquisition of Marine Equipment: \nIn collaboration with our development partners we facilitate the acquisition of a wide range of marine equipment ranging from service boats, crew boats anchor handling vessels, to fixed and floating oil production platforms ",
   },
   {
     question: "What industries does ZOE Maritime work with?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Maritime Industry. Maritime Resource Managers: \nWe are maritime resource managers. We source and provide relevant personnel to meet our client’s needs. This includes the provision and management of crew.",
   },
 ];

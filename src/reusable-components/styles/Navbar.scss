@@ -126,9 +126,9 @@
     }
   }
 }
-.arrow-div {
-  width: 0;
-}
+// .arrow-div {
+//   width: 0;
+// }
 
 @media screen and (max-width: 1300px) {
   .logo {
@@ -237,14 +237,15 @@
       background-color: rgba(0, 39, 84, 1);
       color: rgba(255, 255, 255, 1);
 
-      .arrow-div {
-        background-color: variables.$white;
-        svg {
-          path {
-            stroke: rgba(0, 39, 84, 1);
-          }
-        }
-      }
+      // .arrow-div {
+      //   background-color: variables.$white;
+
+      //   svg {
+      //     path {
+      //       stroke: rgba(0, 39, 84, 1);
+      //     }
+      //   }
+      // }
     }
   }
 
@@ -253,9 +254,9 @@
     pointer-events: all;
   }
 
-  .arrow-div {
-    width: 44px;
-  }
+  // .arrow-div {
+  //   width: 44px;
+  // }
 
   .nav__hamburger {
     @include mixins.flex-column;

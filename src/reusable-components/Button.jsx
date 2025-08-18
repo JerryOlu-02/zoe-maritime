@@ -9,7 +9,7 @@ export default function Button({ props, className, children, link, url }) {
 
   return link ? (
     <a href={url} target="_blank" rel="noreferrer" className={classes}>
-      <p>{children}</p>
+      {children}
     </a>
   ) : (
     <button {...props} className={classes}>
