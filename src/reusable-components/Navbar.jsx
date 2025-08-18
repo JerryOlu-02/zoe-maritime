@@ -45,7 +45,9 @@ export default function NavBar() {
 
   return (
     <nav className={`navbar ${stickyClass}`}>
-      <h3 className="logo">{isSticky ? <LogoDarkSvg /> : <LogoSvg />}</h3>
+      <h3 className="logo">
+        {isSticky || isOpen ? <LogoDarkSvg /> : <LogoSvg />}
+      </h3>
 
       <div className={`nav__container ${activeClass}`}>
         <ul className={`nav__links ${activeClass}`}>

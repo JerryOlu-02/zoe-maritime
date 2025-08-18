@@ -8,6 +8,7 @@
   left: 0;
   z-index: 2;
   @include mixins.flex-space-between;
+  align-items: center;
   padding: 16.5px 80px;
 
   transition: background-color 0.5s ease-in-out;
@@ -91,7 +92,7 @@
   cursor: pointer;
   position: fixed;
   right: 40px;
-  top: 27.5px;
+  top: 43px;
   z-index: 15;
 
   span {
@@ -151,7 +152,7 @@
 @media screen and (max-width: 990px) {
   .navbar {
     padding: 16px 40px;
-    height: 80px;
+    height: 100px;
   }
 
   .navbar.sticky {

@@ -32,6 +32,10 @@
   @media screen and (max-width: 1080px) {
     width: 50%;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .speakers-item__wrapper {
