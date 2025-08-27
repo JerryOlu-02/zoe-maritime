@@ -38,6 +38,12 @@
   .btn {
     background-color: rgba(6, 158, 220, 1);
     color: variables.$white;
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
   }
 
   .btn.arrow {

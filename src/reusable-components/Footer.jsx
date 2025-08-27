@@ -13,7 +13,7 @@ export default function Footer() {
         </h2>
 
         <div className="footer__buttons">
-          <Button>
+          <Button mail mailTo="zoemaritime@gmail.com">
             <CallSvg />
             Contact Us
           </Button>

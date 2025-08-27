@@ -19,7 +19,7 @@ export default function Sponsor() {
           </p>
         </aside>
 
-        <Button>
+        <Button mail mailTo="zoemaritime@gmail.com">
           <CallSvg />
           Contact Us
         </Button>

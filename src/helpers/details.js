@@ -11,6 +11,8 @@ import Speaker3Img from "../assets/images/speaker-3.jpg";
 import Speaker4Img from "../assets/images/speaker-4.jpg";
 import Speaker5Img from "../assets/images/speaker-5.jpg";
 import Speaker6Img from "../assets/images/speaker-6.jpg";
+import Speaker7Img from "../assets/images/speaker-7.jpg";
+import Speaker8Img from "../assets/images/speaker-8.jpg";
 
 export const CORE_SERVICES = [
   {
@@ -98,6 +100,16 @@ export const SPEAKERS = [
     image: Speaker6Img,
     name: "Dr. Abubakar Dantsoho",
     position: "Managing Director Nigerian Ports Authority [NPA]",
+  },
+  {
+    image: Speaker7Img,
+    name: "Dr Segun Musa",
+    position: "Public Lecturer for LIMWEEK 2025",
+  },
+  {
+    image: Speaker8Img,
+    name: "Dr Odunayo ANI",
+    position: "President, WISTAN",
   },
 ];
 

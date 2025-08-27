@@ -54,7 +54,7 @@ export default function Highlights() {
             </li>
           </ul>
 
-          <Button className="arrow">
+          <Button mail mailTo="zoemaritime@gmail.com" className="arrow">
             Contact Us <ArrowUp />
           </Button>
 
@@ -87,7 +87,7 @@ export default function Highlights() {
             </li>
           </ul>
 
-          <Button className="arrow">
+          <Button mail mailTo="zoemaritime@gmail.com" className="arrow">
             Contact Us <ArrowUp />
           </Button>
 
@@ -123,7 +123,7 @@ export default function Highlights() {
               </li>
               <li>
                 <Dot />
-                Rollup Stand - <strong>₦400,000</strong>
+                Rollup Stand - <strong>₦100,000</strong>
               </li>
             </ul>
 
@@ -139,7 +139,7 @@ export default function Highlights() {
             </ul>
           </div>
 
-          <Button className="arrow">
+          <Button mail mailTo="zoemaritime@gmail.com" className="arrow">
             Contact Us <ArrowUp />
           </Button>
 
