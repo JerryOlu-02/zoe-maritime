@@ -70,11 +70,11 @@ export const CORE_DETAILS = [
 ];
 
 export const SPEAKERS = [
-  {
-    image: Speaker1Img,
-    name: "Ms. Olufunmilayo FOLORUNSO",
-    position: "Director General Nigerian Maritime Safety Agency [NIMASA]",
-  },
+  // {
+  //   image: Speaker1Img,
+  //   name: "Ms. Olufunmilayo FOLORUNSO",
+  //   position: "Director General Nigerian Maritime Safety Agency [NIMASA]",
+  // },
   {
     image: Speaker2Img,
     name: "Mr. Akutah Pius Ukeyima",

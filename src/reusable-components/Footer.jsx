@@ -1,6 +1,7 @@
 import "./styles/Footer.scss";
 import Button, { ArrowUp } from "./Button";
 import { ReactComponent as CallSvg } from "../assets/svg/call.svg";
+import { ReactComponent as Logo } from "../assets/svg/logo.svg";
 
 export default function Footer() {
   return (
@@ -33,7 +34,8 @@ export default function Footer() {
       <aside className="footer__right">
         <p>+234 903 350 3240</p>
         <p>zoemaritime@gmail.com</p>
-        <p>Location address</p>
+        {/* <p>Location address</p> */}
+        <Logo />
       </aside>
     </section>
   );
