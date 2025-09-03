@@ -138,9 +138,7 @@ export default function Highlights() {
 
           <Button
             link
-            url={
-              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
-            }
+            url={"https://mainstack.store/limweek2025/zoemaritime"}
             className="arrow"
           >
             Pay Now <ArrowUp />
@@ -247,9 +245,7 @@ export default function Highlights() {
 
           <Button
             link
-            url={
-              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
-            }
+            url={"https://mainstack.store/limweek2025/zoemaritime"}
             className="arrow"
           >
             Pay Now <ArrowUp />
