@@ -54,17 +54,25 @@ export default function Highlights() {
             </li>
           </ul>
 
-          <Button mail mailTo="zoemaritime@gmail.com" className="arrow">
-            Contact Us <ArrowUp />
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
           </Button>
 
           <ConferenceSvg className="svg conference" />
         </div>
+      </aside>
 
+      <aside ref={contentRef} className="highlights__list two">
         <div className="highlight__item">
           <div className="highlight__content">
             <div>
-              <h3>Exhibition Opportunities</h3>
+              <h3>Exhibition Opportunities 🇳🇬</h3>
               <p>₦450,000 per booth</p>
             </div>
 
@@ -87,8 +95,14 @@ export default function Highlights() {
             </li>
           </ul>
 
-          <Button mail mailTo="zoemaritime@gmail.com" className="arrow">
-            Contact Us <ArrowUp />
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
           </Button>
 
           <ExhibitionSvg className="svg exhibition" />
@@ -97,9 +111,51 @@ export default function Highlights() {
         <div className="highlight__item">
           <div className="highlight__content">
             <div>
+              <h3>Exhibition Opportunities 🇺🇸</h3>
+              <p>$875 per booth</p>
+            </div>
+
+            <p className="highlight__content-description">
+              Dedicated exhibition booths will be available for industry
+              stakeholders to showcase their brand, products, and services to a
+              wide audience of maritime professionals.
+            </p>
+          </div>
+
+          <div className="highlight__benefit-container">
+            <ul className="highlight__benefit">
+              <li>
+                <CheckMark />1 Table and 2 Chairs
+              </li>
+              <li>
+                <CheckMark />2 Spotlights
+              </li>
+              <li>
+                <CheckMark />1 Power Socket
+              </li>
+            </ul>
+          </div>
+
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
+          </Button>
+
+          <AdvertSvg className="svg advert" />
+        </div>
+
+        <div className="highlight__item">
+          <div className="highlight__content">
+            <div>
               <h3>
                 Advertisement in
-                <br /> conference brochure
+                <br /> conference
+                <br /> brochure🇳🇬
               </h3>
             </div>
 
@@ -111,39 +167,95 @@ export default function Highlights() {
             </p>
           </div>
 
-          <div className="highlight__benefit-container">
-            <ul className="highlight__benefit">
-              <li>
-                <Dot />
-                Back Page - <strong>₦400,000</strong>
-              </li>
-              <li>
-                <Dot />
-                Half Page - <strong>₦250,000</strong>
-              </li>
-              <li>
-                <Dot />
-                Rollup Stand - <strong>₦100,000</strong>
-              </li>
-            </ul>
+          <ul className="highlight__benefit">
+            <li>
+              <Dot />
+              Back Page - <strong> ₦400,000</strong>
+            </li>
+            <li>
+              <Dot />
+              Centre Spread - <strong>₦350,000</strong>
+            </li>
+            <li>
+              <Dot />
+              Half Page - <strong>₦250,000</strong>
+            </li>
+            <li>
+              <Dot />
+              Quarter Page - <strong>₦150,000</strong>
+            </li>
+            <li>
+              <Dot />
+              Rollup Stand - <strong>₦400,000</strong>
+            </li>
+          </ul>
 
-            <ul className="highlight__benefit">
-              <li>
-                <Dot />
-                Centre Spread - <strong>₦350,000</strong>
-              </li>
-              <li>
-                <Dot />
-                Quarter Page - <strong>₦150,000</strong>
-              </li>
-            </ul>
-          </div>
-
-          <Button mail mailTo="zoemaritime@gmail.com" className="arrow">
-            Contact Us <ArrowUp />
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
           </Button>
 
-          <AdvertSvg className="svg advert" />
+          <ConferenceSvg className="svg conference" />
+        </div>
+
+        <div className="highlight__item">
+          <div className="highlight__content">
+            <div>
+              <h3>
+                Advertisement in <br />
+                conference
+                <br /> brochure🇺🇸
+              </h3>
+              {/* <p>₦195,000 per delegate</p> */}
+            </div>
+
+            <p className="highlight__content-description">
+              Promote your brand, services, or products by placing an advert in
+              the official conference brochure. This brochure is distributed to
+              all attendees, including key stakeholders in the maritime
+              industry.
+            </p>
+          </div>
+
+          <ul className="highlight__benefit">
+            <li>
+              <Dot />
+              Back Page - <strong> $890</strong>
+            </li>
+            <li>
+              <Dot />
+              Centre Spread - <strong>$775</strong>
+            </li>
+            <li>
+              <Dot />
+              Half Page - <strong>$530</strong>
+            </li>
+            <li>
+              <Dot />
+              Quarter Page - <strong>$290</strong>
+            </li>
+            <li>
+              <Dot />
+              Rollup Stand - <strong>$110</strong>
+            </li>
+          </ul>
+
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
+          </Button>
+
+          <ConferenceSvg className="svg conference" />
         </div>
       </aside>
     </section>

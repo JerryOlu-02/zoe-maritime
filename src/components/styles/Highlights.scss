@@ -7,13 +7,14 @@
   padding: 96px 64px;
   @include mixins.flex-column;
   align-items: center;
-  gap: 64px;
+  gap: 16px;
   overflow-x: hidden;
 
   h2 {
     font-weight: 800;
     font-size: 64px;
     line-height: 64px;
+    margin-bottom: 64px;
     letter-spacing: -3%;
     text-align: center;
     text-transform: uppercase;
@@ -28,6 +29,13 @@
 
 .highlights__list {
   @include mixins.flex-column;
+  gap: 16px;
+  position: relative;
+}
+
+.highlights__list.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(16rem, 25.57rem));
   gap: 16px;
   position: relative;
 }
@@ -52,26 +60,64 @@
   }
 }
 
-.highlight__item:nth-of-type(2) {
-  border-color: rgba(1, 153, 191, 1);
-  background-color: rgba(14, 172, 211, 1);
-  background-image: url("/src/assets/svg/highlight-2-bg.svg");
-  background-position: center top 0;
-  padding-left: 200px;
-
-  .arrow-div {
-    background-color: rgba(13, 108, 131, 1);
-  }
-}
-
-.highlight__item:nth-of-type(3) {
+.highlight__item:nth-of-type(1) {
   border-color: rgba(0, 144, 94, 1);
   background-color: rgba(4, 161, 106, 1);
-  background-image: url("/src/assets/svg/highlight-3-bg.svg");
+  background-image: url("/src/assets/svg/highlight-1-bg.svg");
   background-position: right 0 bottom 0;
 
   .arrow-div {
-    background-color: rgba(7, 84, 57, 1);
+    background-color: rgba(24, 154, 110, 1);
+  }
+}
+
+.highlights__list.two {
+  .highlight__item:nth-of-type(1) {
+    border-color: rgba(19, 176, 187, 1);
+    background-color: rgba(14, 198, 211, 1);
+    background-image: url("/src/assets/svg/highlight-2-bg.svg");
+    background-position: left 0 top 0;
+    // padding-left: 200px;
+
+    .arrow-div {
+      background-color: rgba(45, 184, 194, 1);
+    }
+  }
+
+  .highlight__item:nth-of-type(2) {
+    border-color: rgba(73, 149, 223, 1);
+    background-color: rgba(36, 128, 215, 1);
+    background-image: url("/src/assets/svg/highlight-3-bg.svg");
+    background-position: left 0 top 0;
+    // padding-left: 200px;
+
+    .arrow-div {
+      background-color: rgba(91, 159, 226, 1);
+    }
+  }
+
+  .highlight__item:nth-of-type(3) {
+    border-color: rgba(83, 21, 154, 1);
+    background-color: rgba(121, 33, 221, 1);
+    background-image: url("/src/assets/svg/highlight-4-bg.svg");
+    background-position: left 0 top 0;
+    // padding-left: 200px;
+
+    .arrow-div {
+      background-color: rgba(83, 21, 154, 1);
+    }
+  }
+
+  .highlight__item:nth-of-type(4) {
+    border-color: rgba(164, 59, 164, 1);
+    background-color: rgba(183, 73, 183, 1);
+    background-image: url("/src/assets/svg/highlight-5-bg.svg");
+    background-position: left 0 top 0;
+    // padding-left: 200px;
+
+    .arrow-div {
+      background-color: rgba(164, 59, 164, 1);
+    }
   }
 }
 
@@ -136,8 +182,28 @@
   }
 }
 
+.highlights__list.two {
+  .highlight__item {
+    padding: 40px;
+
+    .highlight__content {
+      div {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .highlight__content-description {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .arrow-div {
   background-color: rgba(11, 73, 144, 1);
+}
+.svg {
+  display: none;
 }
 
 .conference {
@@ -169,6 +235,11 @@
 }
 
 @media screen and (max-width: 990px) {
+  .highlights {
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
   .conference,
   .advert,
   .exhibition {
@@ -177,6 +248,13 @@
 
   .highlight__item:nth-of-type(2) {
     padding-left: 48px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .highlights__list.two {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -191,6 +269,12 @@
 
   .highlight__content-description {
     width: 70%;
+  }
+
+  .highlights__list.two {
+    .highlight__content-description {
+      width: 100%;
+    }
   }
 }
 
@@ -214,11 +298,17 @@
   .highlight__item {
     max-width: unset;
     width: 100%;
-    padding: 32px 24px;
+    padding: 24px 24px;
     height: max-content;
   }
 
-  .highlight__item:nth-of-type(2) {
-    padding-left: 24px;
+  .highlights__list.two {
+    .highlight__item {
+      padding: 24px;
+    }
   }
+
+  // .highlight__item:nth-of-type(2) {
+  //   padding-left: 24px;
+  // }
 }

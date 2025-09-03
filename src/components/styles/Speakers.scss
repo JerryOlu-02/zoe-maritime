@@ -43,12 +43,20 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(16rem, 17rem));
   gap: 24px;
+  justify-items: center;
+  // place-items: center;
   row-gap: 24px;
 }
 
 .speaker-item {
   @include mixins.flex-column;
+  width: 100%;
+  height: 100%;
   gap: 20px;
+}
+
+.speaker-item:last-of-type {
+  grid-column: 2;
 }
 
 .speaker-item__image {
