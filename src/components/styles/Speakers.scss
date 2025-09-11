@@ -46,6 +46,7 @@
   justify-items: center;
   // place-items: center;
   row-gap: 24px;
+  column-gap: 24px;
 }
 
 .speaker-item {
@@ -108,5 +109,6 @@
   .speakers-item__wrapper-mobile {
     display: block;
     width: 100%;
+    gap: 24px;
   }
 }

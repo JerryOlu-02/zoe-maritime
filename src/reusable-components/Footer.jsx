@@ -34,8 +34,8 @@ export default function Footer() {
       <aside className="footer__right">
         <p>+234 903 350 3240</p>
         <p>zoemaritime@gmail.com</p>
-        {/* <p>Location address</p> */}
-        <Logo />
+        <p>Lagos Oriental Hotel</p>
+        {/* <Logo /> */}
       </aside>
     </section>
   );

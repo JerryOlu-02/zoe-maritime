@@ -24,7 +24,7 @@ export default function Highlights() {
     <section ref={container} className="highlights">
       <h2>Event Highlights & Opportunities</h2>
 
-      <aside ref={contentRef} className="highlights__list">
+      {/* <aside ref={contentRef} className="highlights__list">
         <div className="highlight__item">
           <div className="highlight__content">
             <div>
@@ -66,9 +66,91 @@ export default function Highlights() {
 
           <ConferenceSvg className="svg conference" />
         </div>
-      </aside>
+      </aside> */}
 
       <aside ref={contentRef} className="highlights__list two">
+        <div className="highlight__item">
+          <div className="highlight__content">
+            <div>
+              <h3>Conference Fee 🇳🇬</h3>
+              <p>₦195,000 per delegate</p>
+            </div>
+
+            <p className="highlight__content-description">
+              The fee ensures participants gain valuable insights, networking
+              opportunities, and a complete conference experience in a
+              professional and comfortable environment.
+            </p>
+          </div>
+
+          <ul className="highlight__benefit">
+            <li>
+              <CheckMark />
+              Conference Materials
+            </li>
+            <li>
+              <CheckMark />
+              Tea breaks and Lunch
+            </li>
+            <li>
+              <CheckMark />
+              Certificate of Attendance
+            </li>
+          </ul>
+
+          <Button
+            link
+            url={
+              "https://tix.africa/lagos-international-maritime-week-limweek-2025"
+            }
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
+          </Button>
+
+          <ConferenceSvg className="svg conference" />
+        </div>
+
+        <div className="highlight__item">
+          <div className="highlight__content">
+            <div>
+              <h3>Conference Fee 🇺🇸</h3>
+              <p>₦195,000 per delegate</p>
+            </div>
+
+            <p className="highlight__content-description">
+              The fee ensures participants gain valuable insights, networking
+              opportunities, and a complete conference experience in a
+              professional and comfortable environment.
+            </p>
+          </div>
+
+          <ul className="highlight__benefit">
+            <li>
+              <CheckMark />
+              Conference Materials
+            </li>
+            <li>
+              <CheckMark />
+              Tea breaks and Lunch
+            </li>
+            <li>
+              <CheckMark />
+              Certificate of Attendance
+            </li>
+          </ul>
+
+          <Button
+            link
+            url={"https://mainstack.store/limweek2025/zoemaritime"}
+            className="arrow"
+          >
+            Pay Now <ArrowUp />
+          </Button>
+
+          <ConferenceSvg className="svg conference" />
+        </div>
+
         <div className="highlight__item">
           <div className="highlight__content">
             <div>
