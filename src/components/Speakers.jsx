@@ -17,11 +17,9 @@ export default function Speakers() {
   const speakerItem = speakers.map((item, index) => {
     return (
       <div className="speaker-item" key={index}>
-        <img
-          src={item.image}
-          alt={`${item.name}__image`}
-          className="speaker-item__image"
-        />
+        <div className="speaker-item__image">
+          <img src={item.image} alt={`${item.name}__image`} />
+        </div>
 
         <div className="speaker-item__desc">
           <h5>{item.name}</h5>
