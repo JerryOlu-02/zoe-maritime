@@ -13,6 +13,16 @@ import Speaker5Img from "../assets/images/speaker-5.jpg";
 import Speaker6Img from "../assets/images/speaker-6.jpg";
 import Speaker7Img from "../assets/images/speaker-7.jpg";
 import Speaker8Img from "../assets/images/speaker-8.jpg";
+import Speaker9Img from "../assets/images/speaker-9.jpg";
+import Speaker10Img from "../assets/images/speaker-10.jpg";
+import Speaker11Img from "../assets/images/speaker-11.jpg";
+import Speaker12Img from "../assets/images/speaker-12.jpg";
+
+import ModeratorImg1 from "../assets/images/moderator-1.jpg";
+import ModeratorImg2 from "../assets/images/moderator-2.jpg";
+import ModeratorImg3 from "../assets/images/moderator-3.jpg";
+import ModeratorImg4 from "../assets/images/moderator-4.jpg";
+import ModeratorImg5 from "../assets/images/moderator-5.jpg";
 
 export const CORE_SERVICES = [
   {
@@ -77,39 +87,61 @@ export const SPEAKERS = [
   // },
   {
     image: Speaker2Img,
-    name: "Mr. Akutah Pius Ukeyima",
+    name: "Mr. Akutah Pius UKEYIMA",
     position: "Executive Secretary Nigerian Shippers Council [NSC]",
   },
   {
     image: Speaker3Img,
-    name: "Engr. Felix Omatsola Ogbe",
+    name: "Engr. Felix Omatsola OGBE",
     position:
       "Executive Secretary Nigeria Content Development and Monitoring Board [NCDMB]",
   },
   {
     image: Speaker4Img,
-    name: "Dr. Dayo Mobereola",
+    name: "Dr. Dayo MOBEREOLA",
     position: "Director General Nigerian Maritime Safety Agency [NIMASA]",
   },
   {
     image: Speaker5Img,
-    name: "Alhaji-Munirudeen-Bola-Oyebamiji",
+    name: "Alhaji Munirudeen Bola OYEBAMIJI",
     position: "Managing Director Nigeria Inland Waterways Authority [NIWA]  ",
   },
   {
     image: Speaker6Img,
-    name: "Dr. Abubakar Dantsoho",
+    name: "Dr. Abubakar DANTSOHO",
     position: "Managing Director Nigerian Ports Authority [NPA]",
   },
   {
     image: Speaker7Img,
-    name: "Dr Segun Musa",
-    position: "Public Lecturer for LIMWEEK 2025",
+    name: "Eng Tolulope LONGE",
+    position: "National President, Women in Energy Oil and Gas (WEOG)",
   },
   {
     image: Speaker8Img,
+    name: "Chinyere ZIGGY",
+    position:
+      "AZIKE Deputy Director, Nigerian Maritime' Administration and Safety Agency",
+  },
+  {
+    image: Speaker9Img,
+    name: "Rollens MACFOY",
+    position: "President. Women in Maritime' in Africa- Nigeria",
+  },
+  {
+    image: Speaker10Img,
     name: "Dr Odunayo ANI",
-    position: "President, WISTAN",
+    position:
+      "President Women's International Shipping and Trading Association WISTA Nigeria",
+  },
+  {
+    image: Speaker11Img,
+    name: "Enitan SOLARIN",
+    position: "Managing Director. YOA INSURANCE BROKERS",
+  },
+  {
+    image: Speaker12Img,
+    name: "Emmanuel MAIGUWA",
+    position: "President Maritime Security Providers Association of Nigeria",
   },
 ];
 
@@ -155,5 +187,33 @@ export const FAQS = [
     question: "What industries does ZOE Maritime work with?",
     answer:
       "Maritime Industry. Maritime Resource Managers: \nWe are maritime resource managers. We source and provide relevant personnel to meet our client’s needs. This includes the provision and management of crew.",
+  },
+];
+
+export const moderators = [
+  {
+    image: ModeratorImg1,
+    name: "Ogonnaya EMELE",
+    position: "Bloomfield Law",
+  },
+  {
+    image: ModeratorImg2,
+    name: "HE Ambassador Florentina Adenike UKONGA",
+    position: "Former Executive Secretary,Gulf of Guinea Commission ",
+  },
+  {
+    image: ModeratorImg3,
+    name: "Ruth Chukwukezirim ",
+    position: "CEO, Gobel Energy and Logistic",
+  },
+  {
+    image: ModeratorImg4,
+    name: "Violet Olaitan WILLIAMS",
+    position: "Founder OCEAN AMBASSADORS FOUNDATION",
+  },
+  {
+    image: ModeratorImg5,
+    name: "Vivian CHIMEZIE ",
+    position: "Director General Nigerian Chamber of Shipping",
   },
 ];

@@ -4,8 +4,10 @@ import Faqs from "../components/Faqs";
 import Hero from "../components/Hero";
 import Highlights from "../components/Highlights";
 import Limweek from "../components/Limweek";
+import Moderators from "../components/Moderators";
 import PastEvents from "../components/PastEvents";
 import ProgramTimeline from "../components/ProgramTimeline";
+import Rapporteurs from "../components/Rapporteurs";
 import Roundtable from "../components/Roundtable";
 import Speakers from "../components/Speakers";
 import Sponsor from "../components/Sponsor";
@@ -28,6 +30,10 @@ export default function () {
       <WhoAttend />
 
       <Roundtable />
+
+      <Moderators />
+
+      <Rapporteurs />
 
       <Speakers />
 

@@ -15,19 +15,37 @@ export default function Speakers() {
   }, []);
 
   const speakerItem = speakers.map((item, index) => {
-    return (
-      <div className="speaker-item" key={index}>
-        <div className="speaker-item__image">
-          <img src={item.image} alt={`${item.name}__image`} />
-        </div>
+    if (index < 8)
+      return (
+        <div className="speaker-item" key={index}>
+          <div className="speaker-item__image">
+            <img src={item.image} alt={`${item.name}__image`} />
+          </div>
 
-        <div className="speaker-item__desc">
-          <h5>{item.name}</h5>
+          <div className="speaker-item__desc">
+            <h5>{item.name}</h5>
 
-          <p>{item.position}</p>
+            <p>{item.position}</p>
+          </div>
         </div>
-      </div>
-    );
+      );
+  });
+
+  const speakerLastThreeItem = speakers.map((item, index) => {
+    if (index >= 8)
+      return (
+        <div className="speaker-item" key={index}>
+          <div className="speaker-item__image">
+            <img src={item.image} alt={`${item.name}__image`} />
+          </div>
+
+          <div className="speaker-item__desc">
+            <h5>{item.name}</h5>
+
+            <p>{item.position}</p>
+          </div>
+        </div>
+      );
   });
 
   const speakerItemMobile = speakers.map((item, index) => {
@@ -54,7 +72,13 @@ export default function Speakers() {
         <h3>Speakers of the Day</h3>
       </aside>
 
-      <aside className="speakers-item__wrapper">{speakerItem}</aside>
+      <div className="speakers-wrapper-desktop">
+        <aside className="speakers-item__wrapper">{speakerItem}</aside>
+
+        <aside className="speakers-last__3__item__wrapper">
+          {speakerLastThreeItem}
+        </aside>
+      </div>
 
       <Swiper
         breakpoints={{

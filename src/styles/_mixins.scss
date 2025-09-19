@@ -29,14 +29,9 @@
 }
 
 @mixin h1 {
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: -3%;
-
-  @media screen and (max-width: 650px) {
-    font-size: 40px;
-    line-height: 40px;
-  }
+  font-size: var(--header-1);
+  line-height: var(--line-height-1);
+  letter-spacing: var(--letter-spacing-1);
 }
 
 @mixin h3 {
