@@ -115,7 +115,7 @@ export default function Highlights() {
           <div className="highlight__content">
             <div>
               <h3>Conference Fee 🇺🇸</h3>
-              <p>₦195,000 per delegate</p>
+              <p>$500 per delegate</p>
             </div>
 
             <p className="highlight__content-description">
