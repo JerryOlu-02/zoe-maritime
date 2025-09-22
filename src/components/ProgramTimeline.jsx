@@ -20,8 +20,8 @@ export default function ProgramTimeline() {
             <p>Opening Public Lecture</p>
 
             <p>
-              By <strong>Ms. Olufunmilayo FOLORUNSO</strong>, Secretary General
-              African Shipowners Association.
+              By <strong>Dr. Segun Musa</strong>, Secretary General African
+              Shipowners Association.
             </p>
           </div>
         </div>
@@ -33,8 +33,10 @@ export default function ProgramTimeline() {
             <p>Maritime B2B Conference</p>
 
             <p>
-              10th International Maritime Business to Business Conference and
-              Exhibition comprising round tables on:
+              There are different rountables quoted in the brief which ought to
+              have been listed to complete the sentence eg Maritime Security in
+              the Gulf of Guinea, Maritime Transportation and Port Development,
+              Marine Environment, Women in Maritime etc.
             </p>
           </div>
         </div>

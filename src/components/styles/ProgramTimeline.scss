@@ -26,7 +26,9 @@
 .program-timeline__item {
   padding: 32px;
   @include mixins.flex-column;
+  width: 50%;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 150px;
   border: 1px solid rgba(143, 143, 143, 1);
   border-right: 0;
@@ -73,6 +75,7 @@
   }
 
   .program-timeline__item {
+    width: 100%;
     border-left: 0;
     border-bottom: 0;
 
