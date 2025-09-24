@@ -17,12 +17,14 @@ import Speaker9Img from "../assets/images/speaker-9.jpg";
 import Speaker10Img from "../assets/images/speaker-10.jpg";
 import Speaker11Img from "../assets/images/speaker-11.jpg";
 import Speaker12Img from "../assets/images/speaker-12.jpg";
+import Speaker13Img from "../assets/images/speaker-13.jpg";
 
 import ModeratorImg1 from "../assets/images/moderator-1.jpg";
 import ModeratorImg2 from "../assets/images/moderator-2.jpg";
 import ModeratorImg3 from "../assets/images/moderator-3.jpg";
 import ModeratorImg4 from "../assets/images/moderator-4.jpg";
 import ModeratorImg5 from "../assets/images/moderator-5.jpg";
+import ModeratorImg6 from "../assets/images/moderator-6.jpg";
 
 export const CORE_SERVICES = [
   {
@@ -118,14 +120,13 @@ export const SPEAKERS = [
   },
   {
     image: Speaker8Img,
-    name: "Chinyere ZIGGY",
-    position:
-      "AZIKE Deputy Director, Nigerian Maritime' Administration and Safety Agency",
+    name: "Rollens MACFOY",
+    position: "President Women in Maritime' in Africa",
   },
   {
     image: Speaker9Img,
-    name: "Rollens MACFOY",
-    position: "President. Women in Maritime' in Africa- Nigeria",
+    name: "Esther OIBO",
+    position: "MD/COO FLEET FENCE LTD.",
   },
   {
     image: Speaker10Img,
@@ -142,6 +143,12 @@ export const SPEAKERS = [
     image: Speaker12Img,
     name: "Emmanuel MAIGUWA",
     position: "President Maritime Security Providers Association of Nigeria",
+  },
+  {
+    image: Speaker13Img,
+    name: "Chinyere ZIGGY",
+    position:
+      "ZIKE Deputy Director, Nigerian Maritime' Administration and Safety Agency",
   },
 ];
 
@@ -215,5 +222,11 @@ export const moderators = [
     image: ModeratorImg5,
     name: "Vivian CHIMEZIE ",
     position: "Director General Nigerian Chamber of Shipping",
+  },
+  {
+    image: ModeratorImg6,
+    name: "Toyin YUSUFF ",
+    position:
+      "CEO, Makitas Energy & Energy Efficiency Ltd. National Vice-President,  Women in Energy Oil and Gas (WEOG) Nigeria",
   },
 ];

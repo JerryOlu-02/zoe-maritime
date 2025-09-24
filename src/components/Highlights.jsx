@@ -142,7 +142,7 @@ export default function Highlights() {
 
           <Button
             link
-            url={"https://mainstack.store/limweek2025/zoemaritime"}
+            url={"https://mainstack.store/limweek2025/zoemaritime/checkout"}
             className="arrow"
           >
             Pay Now <ArrowUp />
@@ -220,7 +220,7 @@ export default function Highlights() {
 
           <Button
             link
-            url={"https://mainstack.store/limweek2025/zoemaritime"}
+            url={"https://mainstack.store/limweek2025/GYEx2QEmbLsY/checkout"}
             className="arrow"
           >
             Pay Now <ArrowUp />
@@ -327,7 +327,7 @@ export default function Highlights() {
 
           <Button
             link
-            url={"https://mainstack.store/limweek2025/zoemaritime"}
+            url={"https://mainstack.store/limweek2025/kNszMxCxrPYq/checkout"}
             className="arrow"
           >
             Pay Now <ArrowUp />

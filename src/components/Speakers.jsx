@@ -15,38 +15,38 @@ export default function Speakers() {
   }, []);
 
   const speakerItem = speakers.map((item, index) => {
-    if (index < 8)
-      return (
-        <div className="speaker-item" key={index}>
-          <div className="speaker-item__image">
-            <img src={item.image} alt={`${item.name}__image`} />
-          </div>
-
-          <div className="speaker-item__desc">
-            <h5>{item.name}</h5>
-
-            <p>{item.position}</p>
-          </div>
+    // if (index < 8)
+    return (
+      <div className="speaker-item" key={index}>
+        <div className="speaker-item__image">
+          <img src={item.image} alt={`${item.name}__image`} />
         </div>
-      );
+
+        <div className="speaker-item__desc">
+          <h5>{item.name}</h5>
+
+          <p>{item.position}</p>
+        </div>
+      </div>
+    );
   });
 
-  const speakerLastThreeItem = speakers.map((item, index) => {
-    if (index >= 8)
-      return (
-        <div className="speaker-item" key={index}>
-          <div className="speaker-item__image">
-            <img src={item.image} alt={`${item.name}__image`} />
-          </div>
+  // const speakerLastThreeItem = speakers.map((item, index) => {
+  //   if (index >= 8)
+  //     return (
+  //       <div className="speaker-item" key={index}>
+  //         <div className="speaker-item__image">
+  //           <img src={item.image} alt={`${item.name}__image`} />
+  //         </div>
 
-          <div className="speaker-item__desc">
-            <h5>{item.name}</h5>
+  //         <div className="speaker-item__desc">
+  //           <h5>{item.name}</h5>
 
-            <p>{item.position}</p>
-          </div>
-        </div>
-      );
-  });
+  //           <p>{item.position}</p>
+  //         </div>
+  //       </div>
+  //     );
+  // });
 
   const speakerItemMobile = speakers.map((item, index) => {
     return (
@@ -74,10 +74,10 @@ export default function Speakers() {
 
       <div className="speakers-wrapper-desktop">
         <aside className="speakers-item__wrapper">{speakerItem}</aside>
-
+        {/* 
         <aside className="speakers-last__3__item__wrapper">
           {speakerLastThreeItem}
-        </aside>
+        </aside> */}
       </div>
 
       <Swiper
